@@ -1,0 +1,11 @@
+[2026/05/13 13:38:34.804484,  0] source3/smbd/server.c:2119(main)
+  smbd version 4.23.6-Ubuntu-4.23.6+dfsg-1ubuntu2 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2025
+[2026/05/13 13:38:34.841882,  0] source3/smbd/server.c:2119(main)
+  smbd version 4.23.6-Ubuntu-4.23.6+dfsg-1ubuntu2 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2025
+[2026/05/13 13:38:34.845659,  0] lib/util/pidfile.c:217(pidfile_create)
+  ERROR: smbd is already running. File /run/samba/smbd.pid exists and process id 34 is running.
+[2026/05/13 13:41:56.105823,  0] source3/smbd/server.c:2119(main)
+  smbd version 4.23.6-Ubuntu-4.23.6+dfsg-1ubuntu2 started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2025
