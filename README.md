@@ -69,19 +69,22 @@ Program membaca seluruh file koordinat lalu menggabungkannya menjadi isi `tujuan
 ## Cara Menjalankan
 
 ### Compile
-
 ```bash
 gcc kenz_rescue.c `pkg-config fuse --cflags --libs` -o kenz_rescue
 ```
 
 ### Mount
-
 ```bash
+mkdir -p mnt
 ./kenz_rescue amba_files mnt
 ```
 
-### Unmount
+### Cek isi tujuan.txt
+```bash
+cat mnt/tujuan.txt
+```
 
+### Unmount
 ```bash
 fusermount -u mnt
 ```
@@ -90,14 +93,11 @@ fusermount -u mnt
 
 ## Screenshot
 
-### Struktur Folder
-![Screenshot](assets/soal1/struktur.png)
-
-### Mount Filesystem
-![Screenshot](assets/soal1/mount.png)
-
 ### Isi tujuan.txt
-![Screenshot](assets/soal1/tujuan.png)
+![Screenshot](assets/soal_1/tujuan-txt.png)
+
+### Titik Lokasi
+![Screenshot](assets/soal_1/titik_lokasi.png)
 
 ---
 
