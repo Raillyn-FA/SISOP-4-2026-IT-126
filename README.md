@@ -231,17 +231,14 @@ gcc client.c -o client
 
 ## Screenshot
 
-### Encrypted Storage
-![Screenshot](assets/soal2/storage.png)
-
 ### FUSE Mount
-![Screenshot](assets/soal2/mount.png)
+![Screenshot](assets/soal_2/JalankanFuse.png)
 
-### Docker Running
-![Screenshot](assets/soal2/docker.png)
+### Build Docker
+![Screenshot](assets/soal_2/BuildDocker.png)
 
 ### Client Connected
-![Screenshot](assets/soal2/client.png)
+![Screenshot](assets/soal_2/JalankanClient.png)
 
 ---
 
@@ -249,25 +246,6 @@ gcc client.c -o client
 
 ## Deskripsi
 Pada soal ini dibuat file sharing server menggunakan Samba dan Docker Compose dengan pengaturan permission berdasarkan role user.
-
----
-
-## Struktur Folder
-
-```bash
-soal_3/
-├── Dockerfile
-├── docker-compose.yml
-├── smb.conf
-├── entrypoint.sh
-├── data/
-│   ├── docs/
-│   ├── ebooks/
-│   ├── papers/
-│   └── sourcecode/
-└── logs/
-    └── libraryit.log
-```
 
 ---
 
