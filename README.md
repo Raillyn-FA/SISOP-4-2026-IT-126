@@ -229,6 +229,14 @@ gcc client.c -o client
 
 ---
 
+### CleanUp
+
+```bash
+docker stop db_app
+docker rm db_app
+
+fusermount -u fuse_mount
+```
 ## Screenshot
 
 ### FUSE Mount
@@ -326,17 +334,20 @@ smbclient //localhost/sourcecode -p 1445 -U member%member123
 
 ## Screenshot
 
-### Docker Compose Running
-![Screenshot](assets/soal3/docker.png)
+### Jalankan Docker Compose
+![Screenshot](assets/soal_3/JalankanDocker.png)
 
-### Samba User
-![Screenshot](assets/soal3/user.png)
+### Cek Container Aktif
+![Screenshot](assets/soal_3/CekContainerAktif.png)
 
-### Access Denied
-![Screenshot](assets/soal3/denied.png)
+### Samba
+![Screenshot](assets/soal_3/CekShareSamba.png)
+
+### Cek File
+![Screenshot](assets/soal_3/CekFile.png)
 
 ### Logger
-![Screenshot](assets/soal3/logger.png)
+![Screenshot](assets/soal_3/CekLoggerRealtime.png)
 
 ---
 
@@ -349,16 +360,3 @@ Mengalami masalah bind mount Docker dengan FUSE pada WSL sehingga diperlukan mou
 
 ## Soal 3
 Permission Linux sempat menyebabkan `librarian` tidak dapat write ke folder docs.
-
----
-
-# Kesimpulan
-
-Pada modul ini dipelajari:
-- Filesystem virtual menggunakan FUSE
-- Encryption filesystem
-- Docker containerization
-- TCP client-server
-- Samba file sharing
-- Linux permission dan ownership
-- Docker Compose dan volume mounting
