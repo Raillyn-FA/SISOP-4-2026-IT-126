@@ -9,4 +9,4 @@
 
 ## Struktur Repository
 
-![alt text](assets/Struktur_Repository.png)
+![alt text](assets/StrukturRepository.png)
