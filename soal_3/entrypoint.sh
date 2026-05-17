@@ -8,7 +8,7 @@ chmod -R 775 /libraryit/papers
 
 chmod -R 750 /libraryit/sourcecode
 
-chmod -R 555 /libraryit/docs
+chmod -R 770 /libraryit/docs
 
 chown -R root:staff /libraryit
 
