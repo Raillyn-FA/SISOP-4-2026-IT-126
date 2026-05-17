@@ -108,20 +108,6 @@ Pada soal ini dibuat encrypted filesystem menggunakan FUSE dengan metode XOR ser
 
 ---
 
-## Struktur Folder
-
-```bash
-soal_2/
-├── Dockerfile
-├── client.c
-├── encrypted_storage/
-├── fuse.c
-├── fuse_mount/
-└── server
-```
-
----
-
 ## Penjelasan Program
 
 Filesystem akan:
@@ -206,12 +192,29 @@ soal-2-modul-4-sisop
 gcc fuse.c `pkg-config fuse --cflags --libs` -o securefs
 ```
 
-### Mount Filesystem
+### Mount Filesystem (Pastikan Sebelumnya Sudah di Unmount)
 
+```bash
+sudo umount fuse_mount 2>/dev/null
+rm -rf fuse_mount
+mkdir fuse_mount
+```
+
+### Jalankan Fuse
 ```bash
 ./securefs -o allow_other fuse_mount
 ```
+---
+### Buka Terminal Baru
 
+### Jalankan Container
+```bash
+docker run -d \
+--name db_app \
+-p 9000:9000 \
+-v $(pwd)/fuse_mount:/app/db \
+soal-2-modul-4-sisop
+```
 ### Compile Client
 
 ```bash
